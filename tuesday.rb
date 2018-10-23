@@ -33,8 +33,10 @@ def unique number_array
   for i in 0...number_array
     if (number_array[i] == number_array[i])
       puts "repeated values #{number_array}"
+      number_array[i] = ""
     else
       puts "unique values #{number_array[i]}"
     end
+    i+=1
   end
 end
